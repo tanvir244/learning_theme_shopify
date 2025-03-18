@@ -39,7 +39,10 @@
   </head>
   <body class="min-h-screen flex flex-col bg-base-100 text-base-content">
     <main id="mainContent" tabindex="-1" class="flex-1 outline-none">
-      {{ content_for_layout }}
+
+      {% section 'collage' %}
+
+      {% comment %} {{ content_for_layout }} {% endcomment %}
     </main>
 
     {% render 'dev-indicator' %}

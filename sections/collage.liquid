@@ -1,0 +1,26 @@
+<section class="page-width">
+    <div class="section-title">
+        <h2>{{ section.settings.title }}</h2>
+        <p>{{ section.settings.subtitle }}</p>
+    </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Collage",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "Shop by Categories"
+      }, {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Section Subtitle",
+        "default": "Lorem text go here...."
+      }
+    ]
+  }
+{% endschema %}
